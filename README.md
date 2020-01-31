@@ -1,4 +1,6 @@
-![alt text](https://github.com/tomlm/BlazorCss/raw/master/icon256.png "BlazorCss")
+<p align="center">
+  <img src="https://github.com/tomlm/BlazorCss/raw/master/icon256.png"/>
+</p>
 
 # BlazorCss
 This is a Blazor Library which adds data bound style rules to the BlazorStyled library (see https://blazorstyled.io/) 
