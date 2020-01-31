@@ -13,7 +13,9 @@
     <PackageLicenseExpression>MS-PL</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
     <PackageIconUrl />
-    <RepositoryUrl>http://</RepositoryUrl>
+    <RepositoryUrl>https://github.com/tomlm/BlazorCss</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>blazor css</PackageTags>
   </PropertyGroup>
 
 
