@@ -1,0 +1,33 @@
+﻿@page "/"
+@using BlazorStyled
+@using BlazorCss
+
+<h1>Hello, world!</h1>
+<div class="@foo">
+    Welcome to your new app.
+</div>
+
+<div id="blat">
+    This is id blat
+</div>
+
+<Styled>
+    <Rule Selector="#blat"
+          display="grid"
+          height="100%"
+          width="100%"
+          align_content="@AlignContent.SpaceAround"
+          background="red" />
+</Styled>
+
+<Styled @bind-ClassName="@foo">
+    <Rule background="blue"
+          display="@Display.Grid"
+          height="300px"/>
+</Styled>
+
+
+
+@code {
+    private string foo;
+}

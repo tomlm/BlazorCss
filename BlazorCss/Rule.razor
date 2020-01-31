@@ -1,0 +1,720 @@
+﻿@using System.Text
+@using System.Reflection
+
+@GetStyle()
+
+@code
+{
+    /// <summary>
+    /// This is the option selector for css attributes
+    /// </summary>
+    [Parameter]
+    public string Selector { get; set; }
+
+    [Parameter]
+    public string align_content { get; set; }
+
+    [Parameter]
+    public string align_items { get; set; }
+
+    [Parameter]
+    public string align_self { get; set; }
+
+    [Parameter]
+    public string all { get; set; }
+
+    [Parameter]
+    public string animation { get; set; }
+
+    [Parameter]
+    public string animation_delay { get; set; }
+
+    [Parameter]
+    public string animation_direction { get; set; }
+
+    [Parameter]
+    public string animation_duration { get; set; }
+
+    [Parameter]
+    public string animation_fill_mode { get; set; }
+
+    [Parameter]
+    public string animation_iteration_count { get; set; }
+
+    [Parameter]
+    public string animation_name { get; set; }
+
+    [Parameter]
+    public string animation_play_state { get; set; }
+
+    [Parameter]
+    public string animation_timing_function { get; set; }
+
+    [Parameter]
+    public string backface_visibility { get; set; }
+
+    [Parameter]
+    public string background { get; set; }
+
+    [Parameter]
+    public string background_attachment { get; set; }
+
+    [Parameter]
+    public string background_blend_mode { get; set; }
+
+    [Parameter]
+    public string background_clip { get; set; }
+
+    [Parameter]
+    public string background_color { get; set; }
+
+    [Parameter]
+    public string background_image { get; set; }
+
+    [Parameter]
+    public string background_origin { get; set; }
+
+    [Parameter]
+    public string background_position { get; set; }
+
+    [Parameter]
+    public string background_repeat { get; set; }
+
+    [Parameter]
+    public string background_size { get; set; }
+
+    [Parameter]
+    public string border { get; set; }
+
+    [Parameter]
+    public string border_bottom { get; set; }
+
+    [Parameter]
+    public string border_bottom_color { get; set; }
+
+    [Parameter]
+    public string border_bottom_left_radius { get; set; }
+
+    [Parameter]
+    public string border_bottom_right_radius { get; set; }
+
+    [Parameter]
+    public string border_bottom_style { get; set; }
+
+    [Parameter]
+    public string border_bottom_width { get; set; }
+
+    [Parameter]
+    public string border_collapse { get; set; }
+
+    [Parameter]
+    public string border_color { get; set; }
+
+    [Parameter]
+    public string border_image { get; set; }
+
+    [Parameter]
+    public string border_image_outset { get; set; }
+
+    [Parameter]
+    public string border_image_repeat { get; set; }
+
+    [Parameter]
+    public string border_image_slice { get; set; }
+
+    [Parameter]
+    public string border_image_source { get; set; }
+
+    [Parameter]
+    public string border_image_width { get; set; }
+
+    [Parameter]
+    public string border_left { get; set; }
+
+    [Parameter]
+    public string border_left_color { get; set; }
+
+    [Parameter]
+    public string border_left_style { get; set; }
+
+    [Parameter]
+    public string border_left_width { get; set; }
+
+    [Parameter]
+    public string border_radius { get; set; }
+
+    [Parameter]
+    public string border_right { get; set; }
+
+    [Parameter]
+    public string border_right_color { get; set; }
+
+    [Parameter]
+    public string border_right_style { get; set; }
+
+    [Parameter]
+    public string border_right_width { get; set; }
+
+    [Parameter]
+    public string border_spacing { get; set; }
+
+    [Parameter]
+    public string border_style { get; set; }
+
+    [Parameter]
+    public string border_top { get; set; }
+
+    [Parameter]
+    public string border_top_color { get; set; }
+
+    [Parameter]
+    public string border_top_left_radius { get; set; }
+
+    [Parameter]
+    public string border_top_right_radius { get; set; }
+
+    [Parameter]
+    public string border_top_style { get; set; }
+
+    [Parameter]
+    public string border_top_width { get; set; }
+
+    [Parameter]
+    public string border_width { get; set; }
+
+    [Parameter]
+    public string bottom { get; set; }
+
+    [Parameter]
+    public string box_decoration_break { get; set; }
+
+    [Parameter]
+    public string box_shadow { get; set; }
+
+    [Parameter]
+    public string box_sizing { get; set; }
+
+    [Parameter]
+    public string break_after { get; set; }
+
+    [Parameter]
+    public string break_before { get; set; }
+
+    [Parameter]
+    public string break_inside { get; set; }
+
+    [Parameter]
+    public string caption_side { get; set; }
+
+    [Parameter]
+    public string caret_color { get; set; }
+
+    [Parameter]
+    public string @charset { get; set; }
+
+    [Parameter]
+    public string clear { get; set; }
+
+    [Parameter]
+    public string clip { get; set; }
+
+    [Parameter]
+    public string color { get; set; }
+
+    [Parameter]
+    public string column_count { get; set; }
+
+    [Parameter]
+    public string column_fill { get; set; }
+
+    [Parameter]
+    public string column_gap { get; set; }
+
+    [Parameter]
+    public string column_rule { get; set; }
+
+    [Parameter]
+    public string column_rule_color { get; set; }
+
+    [Parameter]
+    public string column_rule_style { get; set; }
+
+    [Parameter]
+    public string column_rule_width { get; set; }
+
+    [Parameter]
+    public string column_span { get; set; }
+
+    [Parameter]
+    public string column_width { get; set; }
+
+    [Parameter]
+    public string columns { get; set; }
+
+    [Parameter]
+    public string content { get; set; }
+
+    [Parameter]
+    public string counter_increment { get; set; }
+
+    [Parameter]
+    public string counter_reset { get; set; }
+
+    [Parameter]
+    public string cursor { get; set; }
+
+    [Parameter]
+    public string direction { get; set; }
+
+    [Parameter]
+    public string display { get; set; }
+
+    [Parameter]
+    public string empty_cells { get; set; }
+
+    [Parameter]
+    public string filter { get; set; }
+
+    [Parameter]
+    public string flex { get; set; }
+
+    [Parameter]
+    public string flex_basis { get; set; }
+
+    [Parameter]
+    public string flex_direction { get; set; }
+
+    [Parameter]
+    public string flex_flow { get; set; }
+
+    [Parameter]
+    public string flex_grow { get; set; }
+
+    [Parameter]
+    public string flex_shrink { get; set; }
+
+    [Parameter]
+    public string flex_wrap { get; set; }
+
+    [Parameter]
+    public string @float { get; set; }
+
+    [Parameter]
+    public string font { get; set; }
+
+    [Parameter]
+    public string @font_face { get; set; }
+
+    [Parameter]
+    public string font_family { get; set; }
+
+    [Parameter]
+    public string font_feature_settings { get; set; }
+
+    [Parameter]
+    public string @font_feature_values { get; set; }
+
+    [Parameter]
+    public string font_kerning { get; set; }
+
+    [Parameter]
+    public string font_language_override { get; set; }
+
+    [Parameter]
+    public string font_size { get; set; }
+
+    [Parameter]
+    public string font_size_adjust { get; set; }
+
+    [Parameter]
+    public string font_stretch { get; set; }
+
+    [Parameter]
+    public string font_style { get; set; }
+
+    [Parameter]
+    public string font_synthesis { get; set; }
+
+    [Parameter]
+    public string font_variant { get; set; }
+
+    [Parameter]
+    public string font_variant_alternates { get; set; }
+
+    [Parameter]
+    public string font_variant_caps { get; set; }
+
+    [Parameter]
+    public string font_variant_east_asian { get; set; }
+
+    [Parameter]
+    public string font_variant_ligatures { get; set; }
+
+    [Parameter]
+    public string font_variant_numeric { get; set; }
+
+    [Parameter]
+    public string font_variant_position { get; set; }
+
+    [Parameter]
+    public string font_weight { get; set; }
+
+    [Parameter]
+    public string grid { get; set; }
+
+    [Parameter]
+    public string grid_area { get; set; }
+
+    [Parameter]
+    public string grid_auto_columns { get; set; }
+
+    [Parameter]
+    public string grid_auto_flow { get; set; }
+
+    [Parameter]
+    public string grid_auto_rows { get; set; }
+
+    [Parameter]
+    public string grid_column { get; set; }
+
+    [Parameter]
+    public string grid_column_end { get; set; }
+
+    [Parameter]
+    public string grid_column_gap { get; set; }
+
+    [Parameter]
+    public string grid_column_start { get; set; }
+
+    [Parameter]
+    public string grid_gap { get; set; }
+
+    [Parameter]
+    public string grid_row { get; set; }
+
+    [Parameter]
+    public string grid_row_end { get; set; }
+
+    [Parameter]
+    public string grid_row_gap { get; set; }
+
+    [Parameter]
+    public string grid_row_start { get; set; }
+
+    [Parameter]
+    public string grid_template { get; set; }
+
+    [Parameter]
+    public string grid_template_areas { get; set; }
+
+    [Parameter]
+    public string grid_template_columns { get; set; }
+
+    [Parameter]
+    public string grid_template_rows { get; set; }
+
+    [Parameter]
+    public string hanging_punctuation { get; set; }
+
+    [Parameter]
+    public string height { get; set; }
+
+    [Parameter]
+    public string hyphens { get; set; }
+
+    [Parameter]
+    public string image_rendering { get; set; }
+
+    [Parameter]
+    public string @import { get; set; }
+
+    [Parameter]
+    public string isolation { get; set; }
+
+    [Parameter]
+    public string justify_content { get; set; }
+
+    [Parameter]
+    public string @keyframes { get; set; }
+
+    [Parameter]
+    public string left { get; set; }
+
+    [Parameter]
+    public string letter_spacing { get; set; }
+
+    [Parameter]
+    public string line_break { get; set; }
+
+    [Parameter]
+    public string line_height { get; set; }
+
+    [Parameter]
+    public string list_style { get; set; }
+
+    [Parameter]
+    public string list_style_image { get; set; }
+
+    [Parameter]
+    public string list_style_position { get; set; }
+
+    [Parameter]
+    public string list_style_type { get; set; }
+
+    [Parameter]
+    public string margin { get; set; }
+
+    [Parameter]
+    public string margin_bottom { get; set; }
+
+    [Parameter]
+    public string margin_left { get; set; }
+
+    [Parameter]
+    public string margin_right { get; set; }
+
+    [Parameter]
+    public string margin_top { get; set; }
+
+    [Parameter]
+    public string max_height { get; set; }
+
+    [Parameter]
+    public string max_width { get; set; }
+
+    [Parameter]
+    public string @media { get; set; }
+
+    [Parameter]
+    public string min_height { get; set; }
+
+    [Parameter]
+    public string min_width { get; set; }
+
+    [Parameter]
+    public string mix_blend_mode { get; set; }
+
+    [Parameter]
+    public string object_fit { get; set; }
+
+    [Parameter]
+    public string object_position { get; set; }
+
+    [Parameter]
+    public string opacity { get; set; }
+
+    [Parameter]
+    public string order { get; set; }
+
+    [Parameter]
+    public string orphans { get; set; }
+
+    [Parameter]
+    public string outline { get; set; }
+
+    [Parameter]
+    public string outline_color { get; set; }
+
+    [Parameter]
+    public string outline_offset { get; set; }
+
+    [Parameter]
+    public string outline_style { get; set; }
+
+    [Parameter]
+    public string outline_width { get; set; }
+
+    [Parameter]
+    public string overflow { get; set; }
+
+    [Parameter]
+    public string overflow_wrap { get; set; }
+
+    [Parameter]
+    public string overflow_x { get; set; }
+
+    [Parameter]
+    public string overflow_y { get; set; }
+
+    [Parameter]
+    public string padding { get; set; }
+
+    [Parameter]
+    public string padding_bottom { get; set; }
+
+    [Parameter]
+    public string padding_left { get; set; }
+
+    [Parameter]
+    public string padding_right { get; set; }
+
+    [Parameter]
+    public string padding_top { get; set; }
+
+    [Parameter]
+    public string page_break_after { get; set; }
+
+    [Parameter]
+    public string page_break_before { get; set; }
+
+    [Parameter]
+    public string page_break_inside { get; set; }
+
+    [Parameter]
+    public string perspective { get; set; }
+
+    [Parameter]
+    public string perspective_origin { get; set; }
+
+    [Parameter]
+    public string pointer_events { get; set; }
+
+    [Parameter]
+    public string position { get; set; }
+
+    [Parameter]
+    public string quotes { get; set; }
+
+    [Parameter]
+    public string resize { get; set; }
+
+    [Parameter]
+    public string right { get; set; }
+
+    [Parameter]
+    public string scroll_behavior { get; set; }
+
+    [Parameter]
+    public string tab_size { get; set; }
+
+    [Parameter]
+    public string table_layout { get; set; }
+
+    [Parameter]
+    public string text_align { get; set; }
+
+    [Parameter]
+    public string text_align_last { get; set; }
+
+    [Parameter]
+    public string text_combine_upright { get; set; }
+
+    [Parameter]
+    public string text_decoration { get; set; }
+
+    [Parameter]
+    public string text_decoration_color { get; set; }
+
+    [Parameter]
+    public string text_decoration_line { get; set; }
+
+    [Parameter]
+    public string text_decoration_style { get; set; }
+
+    [Parameter]
+    public string text_indent { get; set; }
+
+    [Parameter]
+    public string text_justify { get; set; }
+
+    [Parameter]
+    public string text_orientation { get; set; }
+
+    [Parameter]
+    public string text_overflow { get; set; }
+
+    [Parameter]
+    public string text_shadow { get; set; }
+
+    [Parameter]
+    public string text_transform { get; set; }
+
+    [Parameter]
+    public string text_underline_position { get; set; }
+
+    [Parameter]
+    public string top { get; set; }
+
+    [Parameter]
+    public string transform { get; set; }
+
+    [Parameter]
+    public string transform_origin { get; set; }
+
+    [Parameter]
+    public string transform_style { get; set; }
+
+    [Parameter]
+    public string transition { get; set; }
+
+    [Parameter]
+    public string transition_delay { get; set; }
+
+    [Parameter]
+    public string transition_duration { get; set; }
+
+    [Parameter]
+    public string transition_property { get; set; }
+
+    [Parameter]
+    public string transition_timing_function { get; set; }
+
+    [Parameter]
+    public string unicode_bidi { get; set; }
+
+    [Parameter]
+    public string user_select { get; set; }
+
+    [Parameter]
+    public string vertical_align { get; set; }
+
+    [Parameter]
+    public string visibility { get; set; }
+
+    [Parameter]
+    public string white_space { get; set; }
+
+    [Parameter]
+    public string widows { get; set; }
+
+    [Parameter]
+    public string width { get; set; }
+
+    [Parameter]
+    public string word_break { get; set; }
+
+    [Parameter]
+    public string word_spacing { get; set; }
+
+    [Parameter]
+    public string word_wrap { get; set; }
+
+    [Parameter]
+    public string writing_mode { get; set; }
+
+    [Parameter]
+    public string z_index { get; set; }
+
+    public string GetStyle()
+    {
+        StringBuilder sb = new StringBuilder();
+        if (this.Selector != null)
+        {
+            sb.AppendLine(this.Selector + " {");
+        }
+
+        foreach (var property in this.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance).Where(p => p.Name != "Selector"))
+        {
+            var value = property.GetValue(this) as string;
+            if (!String.IsNullOrWhiteSpace(value))
+            {
+                sb.AppendLine($"{property.Name.Replace('_', '-')}: {value};");
+            }
+        }
+        if (this.Selector != null)
+        {
+            sb.AppendLine("}");
+        }
+        return sb.ToString();
+    }
+}

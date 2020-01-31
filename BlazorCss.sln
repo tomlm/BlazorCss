@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCss", "BlazorCss\BlazorCss.csproj", "{5B05B329-4131-4EF9-837A-81ADC555FBEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{5D843739-DEA7-4174-9CA1-D6AC3E936CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp2", "TestApp2\TestApp2.csproj", "{C30752BF-28D9-4682-974B-47E78C92B2C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B05B329-4131-4EF9-837A-81ADC555FBEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B05B329-4131-4EF9-837A-81ADC555FBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B05B329-4131-4EF9-837A-81ADC555FBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B05B329-4131-4EF9-837A-81ADC555FBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D843739-DEA7-4174-9CA1-D6AC3E936CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D843739-DEA7-4174-9CA1-D6AC3E936CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D843739-DEA7-4174-9CA1-D6AC3E936CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D843739-DEA7-4174-9CA1-D6AC3E936CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C30752BF-28D9-4682-974B-47E78C92B2C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C30752BF-28D9-4682-974B-47E78C92B2C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C30752BF-28D9-4682-974B-47E78C92B2C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C30752BF-28D9-4682-974B-47E78C92B2C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8FBAD7B-1986-45A7-B052-696D2115D00F}
+	EndGlobalSection
+EndGlobal
