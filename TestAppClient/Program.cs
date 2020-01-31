@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Blazor.Hosting;
 
-namespace TestApp
+namespace TestAppClient
 {
     public class Program
     {

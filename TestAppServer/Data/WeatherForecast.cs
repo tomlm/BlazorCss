@@ -1,6 +1,6 @@
 using System;
 
-namespace TestApp2.Data
+namespace TestAppServer.Data
 {
     public class WeatherForecast
     {

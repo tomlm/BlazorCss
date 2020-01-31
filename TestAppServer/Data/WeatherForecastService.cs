@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TestApp2.Data
+namespace TestAppServer.Data
 {
     public class WeatherForecastService
     {

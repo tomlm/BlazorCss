@@ -2,7 +2,7 @@ using BlazorStyled;
 using Microsoft.AspNetCore.Components.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace TestApp
+namespace TestAppClient
 {
     public class Startup
     {

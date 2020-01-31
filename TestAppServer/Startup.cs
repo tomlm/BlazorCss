@@ -10,9 +10,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using TestApp2.Data;
+using TestAppServer.Data;
 
-namespace TestApp2
+namespace TestAppServer
 {
     public class Startup
     {
