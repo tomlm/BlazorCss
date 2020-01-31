@@ -12,7 +12,7 @@ With this library you get
 
 ## Installation
 ```
-dotnet add BlazorCss
+dotnet add package BlazorCss 
 ```
 
 ## Usage
