@@ -10,6 +10,10 @@ With this library you get
 * CSS properties are autocompleted
 * Constants are available for auto completion
 
+![alt text](https://github.com/tomlm/BlazorCss/raw/master/NameCompletion.png)
+![alt text](https://github.com/tomlm/BlazorCss/raw/master/ValueCompletion.png)
+
+
 ## Installation
 ```
 dotnet add package BlazorCss 
